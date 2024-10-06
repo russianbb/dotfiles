@@ -17,6 +17,7 @@ files=(
     ubuntu/google-chrome.sh
     ubuntu/keepassxc.sh
     ubuntu/guake.sh
+    ubuntu/zsh.sh
 )
 
 for file in "${files[@]}"; do
