@@ -1,18 +1,21 @@
-#!/bin/bash
+#!/usr/bin/bash
 
+############################
+# This script will:
+# - [x] install `code` via apt if not installed
+# 
 # Installs VSCode via APT adding Microsoft repo
 # https://code.visualstudio.com/docs/setup/linux#_debian-and-ubuntu-based-distributions
+############################
 
 
 PROGRAM_NAME="code"
 URL="https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
 
-if command -v "$PROGRAM_NAME"; then
-	program_path=$(command -v "$PROGRAM_NAME")
-	echo "--> $PROGRAM_NAME already installed at: $program_path"
-
+if command -v "$PROGRAM_NAME" &>/dev/null; then
+	echo "[DOTFILES: ${0}] ${PROGRAM_NAME} already installed. Skipping..."
 else
-	echo "--> $PROGRAM_NAME not found. Installing..."   
+	echo "[DOTFILES: ${0}] $PROGRAM_NAME not found. Installing..."   
 	echo "code code/add-microsoft-repo boolean true" | sudo debconf-set-selections
 	wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 	sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
