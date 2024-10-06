@@ -24,6 +24,7 @@ files=(
     ubuntu/docker.sh
     ubuntu/dbeaver-ce.sh
     ubuntu/minikube.sh
+    ubuntu/kubectl.sh
 )
 
 for file in "${files[@]}"; do
