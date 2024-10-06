@@ -1,0 +1,70 @@
+{
+    // General Settings
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Dracula Theme",
+    "editor.rulers": [
+        87,
+        120
+    ],
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "terminal.integrated.fontFamily": "Hack",
+    "files.trimTrailingWhitespace": true,
+    "gitlens.advanced.messages": {
+        "suppressGitMissingWarning": true
+    },
+    "git.mergeEditor": false,
+    "window.zoomLevel": 0,
+    "explorer.confirmDragAndDrop": false,
+    "files.associations": {
+        "*.json": "jsonc"
+    },
+
+    // Python settings
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    "isort.args": [
+        "--profile",
+        "black"
+    ],
+    "pylint.args": [
+        "--disable=C0114,C0115,C0116,W0718"
+    ],
+    "pylint.importStrategy": "fromEnvironment",
+
+    // Javascript / Typescript Settings
+    "[javascript][javascriptreact][typescript][typescriptreact]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "prettier.singleQuote": true,
+        "editor.tabSize": 2,
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+
+    // Plaintext settings
+    "[plaintext]": {
+        "editor.quickSuggestions": {
+            "comments": "false",
+            "strings": "false",
+            "other": "false"
+        }
+    },
+
+    // Json settings
+    "[json][jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features",
+        "format.keepLines": true
+    },
+    "json.format.keepLines": true,
+
+    // Shell script settings
+    "[shellscript]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+}

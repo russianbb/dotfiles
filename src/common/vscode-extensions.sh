@@ -10,20 +10,21 @@
 extensions=(
 	dracula-theme.theme-dracula
 	eamodio.gitlens
-	ms-python.debugpy
-	ms-python.python
-	ms-python.vscode-pylance
+	esbenp.prettier-vscode
+	foxundermoon.shell-format
 	mhutchie.git-graph
 	ms-azuretools.vscode-docker
-	ms-vscode-remote.remote-containers
+	ms-python.black-formatter
+	ms-python.debugpy
 	ms-python.isort
+	ms-python.python
+	ms-python.vscode-pylance
+	ms-vscode-remote.remote-containers
 	oderwat.indent-rainbow
+	pkief.material-icon-theme
 	pkief.material-icon-theme
 	redhat.vscode-yaml
 	tamasfe.even-better-toml
-	pkief.material-icon-theme
-	esbenp.prettier-vscode
-	foxundermoon.shell-format
 )
 
 installed_extensions=$(code --list-extensions)

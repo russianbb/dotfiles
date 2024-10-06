@@ -13,6 +13,7 @@ files=(
     ubuntu/git.sh
     ubuntu/vscode.sh
     common/vscode-extensions.sh
+    common/vscode-config.sh
     ubuntu/google-chrome.sh
     ubuntu/keepassxc.sh
 )
@@ -21,6 +22,3 @@ for file in "${files[@]}"; do
     echo "[DOTFILES: ${0}] Running script: ${file}"
     bash ./${file}
 done
-
-
-
