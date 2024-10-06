@@ -21,6 +21,7 @@ files=(
     common/oh-my-zsh.sh
     common/oh-my-zsh-config.sh
     ubuntu/font.sh
+    ubuntu/docker.sh
 )
 
 for file in "${files[@]}"; do
