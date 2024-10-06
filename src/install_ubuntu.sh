@@ -16,6 +16,7 @@ files=(
     common/vscode-config.sh
     ubuntu/google-chrome.sh
     ubuntu/keepassxc.sh
+    ubuntu/guake.sh
 )
 
 for file in "${files[@]}"; do
