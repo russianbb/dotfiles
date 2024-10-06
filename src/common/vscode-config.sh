@@ -3,7 +3,7 @@
 ############################
 # This script will:
 # - [x] create a backup for the current vscode settings
-# - [x] copy common vscode settings in place
+# - [x] symlink VSCode settings to dotfiles
 ############################
 
 VSCODE_USER_SETTINGS_DIR="${HOME}/.config/Code/User"
@@ -34,10 +34,9 @@ if [ -d "$VSCODE_USER_SETTINGS_DIR" ]; then
         echo "[DOTFILES: ${0}] Creating symlink..."
     fi
 
-    echo ">>> ${HOME}/dotfiles/src/settings/vscode-user-settings.json"
     ln -sf "${HOME}/dotfiles/src/settings/vscode-user-settings.json" "${VSCODE_USER_SETTINGS_FILE}"
-
     echo "[DOTFILES: ${0}] Symlink sync finished successfully"
+
 else
     echo "[DOTFILES: ${0}] VSCode user settings directory does not exist. Please ensure VS Code is installed."
 fi
