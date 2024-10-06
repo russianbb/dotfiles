@@ -18,6 +18,7 @@ files=(
     ubuntu/keepassxc.sh
     ubuntu/guake.sh
     ubuntu/zsh.sh
+    common/oh-my-zsh.sh
 )
 
 for file in "${files[@]}"; do
