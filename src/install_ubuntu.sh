@@ -22,6 +22,7 @@ files=(
     common/oh-my-zsh-config.sh
     ubuntu/font.sh
     ubuntu/docker.sh
+    ubuntu/dbeaver-ce.sh
 )
 
 for file in "${files[@]}"; do
