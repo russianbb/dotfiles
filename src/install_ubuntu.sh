@@ -20,6 +20,7 @@ files=(
     ubuntu/zsh.sh
     common/oh-my-zsh.sh
     common/oh-my-zsh-config.sh
+    ubuntu/font.sh
 )
 
 for file in "${files[@]}"; do
