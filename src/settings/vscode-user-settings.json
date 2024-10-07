@@ -50,16 +50,15 @@
     // Plaintext settings
     "[plaintext]": {
         "editor.quickSuggestions": {
-            "comments": "false",
-            "strings": "false",
-            "other": "false"
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
         }
     },
 
     // Json settings
     "[json][jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features",
-        "format.keepLines": true
     },
     "json.format.keepLines": true,
 
