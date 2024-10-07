@@ -21,3 +21,6 @@ else
         echo "[DOTFILES: ${0}] Download failed from: $URL"
     fi
 fi
+
+echo "[DOTFILES: ${0}] Updating docker group"
+sudo usermod -aG docker $USER && newgrp docker
