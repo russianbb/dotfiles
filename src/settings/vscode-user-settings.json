@@ -6,7 +6,6 @@
         87,
         120
     ],
-    "editor.formatOnSave": true,
     "editor.tabSize": 4,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "terminal.integrated.fontFamily": "Hack",
