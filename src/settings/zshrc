@@ -110,7 +110,16 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Invoke dotfile aliases
+
 source ${DOTFILES_SRC}/settings/aliases-personal.sh
+
+LOCAL_ALIAS="${HOME}/local-alias"
+if [ -f ${LOCAL_ALIAS} ]; then
+    echo "Loading local-alias"
+    source ${LOCAL_ALIAS}
+else
+    echo "Local aliases not found"
+fi
 
 # Define prompt for kube-ps1
 PROMPT='$(kube_ps1)'$PROMPT # or RPROMPT='$(kube_ps1)'
