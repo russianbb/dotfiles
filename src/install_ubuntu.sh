@@ -19,8 +19,6 @@ files=(
     ubuntu/guake.sh
     ubuntu/font.sh
     ubuntu/dbeaver-ce.sh
-    ubuntu/minikube.sh
-    ubuntu/kubectl.sh
     ubuntu/zsh.sh
     common/oh-my-zsh.sh
     common/oh-my-zsh-config.sh
