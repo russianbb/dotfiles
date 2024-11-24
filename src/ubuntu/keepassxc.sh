@@ -6,7 +6,7 @@
 ############################
 
 PROGRAM_NAME="keepassxc"
-URL="ppa:phoerious/keepassxc "
+URL="ppa:phoerious/keepassxc"
 
 if command -v "$PROGRAM_NAME" &>/dev/null; then
 	echo "[DOTFILES: ${0}] ${PROGRAM_NAME} already installed. Skipping..."

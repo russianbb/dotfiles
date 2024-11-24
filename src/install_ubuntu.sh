@@ -17,17 +17,22 @@ files=(
     ubuntu/google-chrome.sh
     ubuntu/keepassxc.sh
     ubuntu/guake.sh
-    ubuntu/zsh.sh
-    common/oh-my-zsh.sh
-    common/oh-my-zsh-config.sh
     ubuntu/font.sh
-    ubuntu/docker.sh
     ubuntu/dbeaver-ce.sh
     ubuntu/minikube.sh
     ubuntu/kubectl.sh
+    ubuntu/zsh.sh
+    common/oh-my-zsh.sh
+    common/oh-my-zsh-config.sh
 )
 
 for file in "${files[@]}"; do
-    echo "[DOTFILES: ${0}] Running script: ${file}"
+    echo "########################################################"
+    echo "[DOTFILES: ${0}] Starting script: ${file}"
     bash ./${file}
+    echo "[DOTFILES: ${0}] Finished script: ${file}"
+    echo "[DOTFILES: ${0}] Press any key to continue..."
+    echo "########################################################"
+    read
+
 done
